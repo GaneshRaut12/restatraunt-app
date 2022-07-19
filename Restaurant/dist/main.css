@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+    display: grid;
+    grid-template: auto 1fr / 1fr;
+    background-color: #D4D4D4;
+    font-family: "Jaldi", sans-serif;
+    line-height: 1;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6385FF;
+}
+
+.navbar__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav__header {
+    margin-top: 15px;
+    font-size: 36px;
+}
+
+.nav__links {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    padding: 0 10px 5px 10px;
+    font-size: 28px;
+    color: #FF964A;
+    border-bottom: 4px solid transparent;
+}
+
+.nav__link:hover {
+    cursor: pointer;
+    border-bottom: 4px solid #FF964A;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.img__bbq {
+    display: block;
+    margin: 20px;
+    max-width: 595px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.about__content {
+    margin: 20px;
+    width: 60%;
+    max-width: 595px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__content * {
+    line-height: 1.2;
+    margin: 15px;
+}
+
+.active {
+    border-bottom: 4px solid #FF964A;
+}
+
+@media (min-width: 1000px) {
+    .about {
+        align-items: center;
+    }
+
+    .about__header {
+        font-size: 46px;
+    }
+
+    .about__details {
+        font-size: 24px;
+    }
+}
